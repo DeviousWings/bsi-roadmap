@@ -359,7 +359,9 @@ function handleLogout() {
     document.getElementById('username').value = '';
     document.getElementById('password').value = '';
     document.getElementById('mfa-code').value = '';
-    document.getElementById('login-error').textContent = '';
+    const loginErrorEl = document.getElementById('login-error');
+    loginErrorEl.textContent = '';
+    loginErrorEl.style.color = '#cc3333';
     showScreen('login-screen');
 }
 
