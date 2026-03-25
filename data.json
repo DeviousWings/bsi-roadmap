@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:58:58.588Z",
+  "lastUpdated": "2026-03-25T20:59:08.652Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -234,6 +234,13 @@
             {
               "id": "task1774472338575",
               "name": "WEATHERING TIER OPTIONS",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472348648",
+              "name": "GIFT PACKAGING AVAILABLE",
               "completed": false,
               "notes": "",
               "subtasks": []
