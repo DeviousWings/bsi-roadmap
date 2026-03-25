@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:48:17.276Z",
+  "lastUpdated": "2026-03-25T20:48:23.531Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -137,6 +137,13 @@
             {
               "id": "task1774471697273",
               "name": "THREE PIECE ASSEMBLY CLEAN AND SOLID",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471703528",
+              "name": "FULL PAINT AND WEATHERING COMPLETE",
               "completed": false,
               "notes": "",
               "subtasks": []
