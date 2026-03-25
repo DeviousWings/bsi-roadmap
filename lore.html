@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSI // Lore Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SITE NAVIGATION -->
+    <nav class="site-nav">
+        <div class="site-nav-left">
+            <span class="site-nav-title">BSI //</span>
+            <a href="index.html">ROADMAP</a>
+            <a href="lore.html" class="active">LORE DATABASE</a>
+        </div>
+        <div>
+            <span class="site-nav-right">
+                BLACKFORGE SPACE INDUSTRIES
+            </span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="lore-hero">
+        <h1>BLACKFORGE</h1>
+        <h2>SPACE INDUSTRIES — LORE DATABASE</h2>
+        <p>
+            CLASSIFIED OPERATIONAL ARCHIVE — 
+            FRONTIER DIVISION // BSI BLACKSTAR
+        </p>
+    </div>
+
+    <!-- LORE NAVIGATION -->
+    <div class="lore-nav">
+        <button class="lore-nav-btn active"
+            onclick="showLoreSection('company', this)">
+            COMPANY
+        </button>
+        <button class="lore-nav-btn"
+            onclick="showLoreSection('blackstar', this)">
+            BSI BLACKSTAR
+        </button>
+        <button class="lore-nav-btn"
+            onclick="showLoreSection('stations', this)">
+            STATIONS
+        </button>
+        <button class="lore-nav-btn"
+            onclick="showLoreSection('crew', this)">
+            FOUNDING CREW
+        </button>
+        <button class="lore-nav-btn"
+            onclick="showLoreSection('clearance', this)">
+            CLEARANCE SYSTEM
+        </button>
+    </div>
+
+    <!-- LORE CONTENT -->
+    <div class="lore-content">
+
+        <!-- COMPANY SECTION -->
+        <div class="lore-section active" id="section-company">
+            <div class="lore-card">
+                <h3>COMPANY OVERVIEW</h3>
+                <p>
+                    Blackforge Space Industries is a frontier corporation
+                    specializing in the design, construction, and deployment
+                    of deep space habitats and exploration vessels. Where
+                    governments plant flags, BSI builds the infrastructure
+                    that lets humanity actually live and work there.
+                </p>
+                <p>
+                    Every colony, every outpost, every research station on
+                    the edge of known space has BSI hardware in its walls.
+                    Their crews are not just builders — they are explorers,
+                    researchers, and specialists operating in the most hostile
+                    environments humanity has ever faced.
+                </p>
+                <p>
+                    BSI does not just make the frontier possible. 
+                    They push it further.
+                </p>
+            </div>
+            <div class="lore-card">
+                <h3>MISSION STATEMENT</h3>
+                <p>HABITAT SYSTEMS FOR THE FRONTIER</p>
+                <p>
+                    To design, build, and deploy the infrastructure humanity
+                    needs to become a truly spacefaring species. From the
+                    first desk module to a full command deck — BSI builds
+                    the frontier one system at a time.
+                </p>
+            </div>
+            <div class="lore-card">
+                <h3>OPERATIONAL DETAILS</h3>
+                <table class="lore-table">
+                    <tr>
+                        <th>FIELD</th>
+                        <th>DATA</th>
+                    </tr>
+                    <tr>
+                        <td>DESIGNATION</td>
+                        <td>BLACKFORGE SPACE INDUSTRIES</td>
+                    </tr>
+                    <tr>
+                        <td>CALLSIGN</td>
+                        <td>BSI</td>
+                    </tr>
+                    <tr>
+                        <td>TAGLINE</td>
+                        <td>HABITAT SYSTEMS FOR THE FRONTIER</td>
+                    </tr>
+                    <tr>
+                        <td>FLAGSHIP</td>
+                        <td>BSI BLACKSTAR</td>
+                    </tr>
+                    <tr>
+                        <td>SHIPYARD</td>
+                        <td>DARKFORGE STATION</td>
+                    </tr>
+                    <tr>
+                        <td>FUTURE BASE</td>
+                        <td>HEPHAESTUS STATION</td>
+                    </tr>
+                    <tr>
+                        <td>STATUS</td>
+                        <td><span class="status-active">● ACTIVE</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- BLACKSTAR SECTION -->
+        <div class="lore-section" id="section-blackstar">
+            <div class="lore-card">
+                <h3>BSI BLACKSTAR — VESSEL PROFILE</h3>
+                <p>
+                    The Blackstar was not born as a flagship. She was born
+                    as a workhorse. Hauling cargo and crew between Earth
+                    orbit and Mars during humanity's earliest steps into
+                    becoming a spacefaring species.
+                </p>
+                <p>
+                    She was the proving ground for two technologies that
+                    changed everything — antigravity systems and integrated
+                    magnetic field generation. Every habitat and exploration
+                    vessel that came after her borrowed from what BSI learned
+                    building and operating the Blackstar.
+                </p>
+                <p>
+                    She earned her flagship status. She was not given it.
+                </p>
+            </div>
+            <div class="lore-card">
+                <h3>VESSEL SPECIFICATIONS</h3>
+                <table class="lore-table">
+                    <tr>
+                        <th>FIELD</th>
+                        <th>DATA</th>
+                    </tr>
+                    <tr>
+                        <td>DESIGNATION</td>
+                        <td>BSI BLACKSTAR</td>
+                    </tr>
+                    <tr>
+                        <td>CLASSIFICATION</td>
+                        <td>FRONTIER EXPLORATION AND RESEARCH VESSEL</td>
+                    </tr>
+                    <tr>
+                        <td>LENGTH</td>
+                        <td>400-600 METERS</td>
+                    </tr>
+                    <tr>
+                        <td>CREW COMPLEMENT</td>
+                        <td>200-400</td>
+                    </tr>
+                    <tr>
+                        <td>DOCKING BAYS</td>
+                        <td>2 PRIMARY — CHINE MOUNTED</td>
+                    </tr>
+                    <tr>
+                        <td>PROPULSION</td>
+                        <td>MULTI-DRIVE ARRAY — STERN MOUNTED</td>
+                    </tr>
+                    <tr>
+                        <td>SPECIAL SYSTEMS</td>
+                        <td>ANTIGRAVITY — MAGNETIC FIELD GENERATOR</td>
+                    </tr>
+                    <tr>
+                        <td>PRIMARY MISSION</td>
+                        <td>DEEP SPACE EXPLORATION</td>
+                    </tr>
+                    <tr>
+                        <td>SECONDARY MISSION</td>
+                        <td>HABITAT DEPLOYMENT — R&D</td>
+                    </tr>
+                    <tr>
+                        <td>STATUS</td>
+                        <td><span class="status-active">● ACTIVE</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="lore-card">
+                <h3>HULL LAYOUT</h3>
+                <table class="lore-table">
+                    <tr>
+                        <th>SECTION</th>
+                        <th>FUNCTION</th>
+                    </tr>
+                    <tr>
+                        <td>BOW</td>
+                        <td>COMMAND AND INTELLIGENCE</td>
+                    </tr>
+                    <tr>
+                        <td>FORWARD MID</td>
+                        <td>CREW QUARTERS AND OPERATIONS</td>
+                    </tr>
+                    <tr>
+                        <td>CENTRAL</td>
+                        <td>RESEARCH AND DEVELOPMENT</td>
+                    </tr>
+                    <tr>
+                        <td>AFT MID</td>
+                        <td>CARGO AND DOCKING BAYS</td>
+                    </tr>
+                    <tr>
+                        <td>STERN</td>
+                        <td>ENGINEERING AND PROPULSION</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- STATIONS SECTION -->
+        <div class="lore-section" id="section-stations">
+            <div class="lore-card">
+                <h3>DARKFORGE STATION</h3>
+                <p>
+                    The beginning. Where humanity took its first steps into
+                    the dark. BSI's home, the Blackstar's birthplace. Named
+                    for the darkness of deep space and the forge that built
+                    everything that followed.
+                </p>
+                <table class="lore-table lore-table-margin">
+                    <tr>
+                        <th>FIELD</th>
+                        <th>DATA</th>
+                    </tr>
+                    <tr>
+                        <td>DESIGNATION</td>
+                        <td>DARKFORGE STATION</td>
+                    </tr>
+                    <tr>
+                        <td>CLASSIFICATION</td>
+                        <td>PRIMARY SHIPYARD AND CONSTRUCTION FACILITY</td>
+                    </tr>
+                    <tr>
+                        <td>LOCATION</td>
+                        <td>EARTH-MARS TRANSIT CORRIDOR</td>
+                    </tr>
+                    <tr>
+                        <td>OPERATOR</td>
+                        <td>BLACKFORGE SPACE INDUSTRIES</td>
+                    </tr>
+                    <tr>
+                        <td>STATUS</td>
+                        <td><span class="status-active">● ACTIVE</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="lore-card">
+                <h3>HEPHAESTUS STATION</h3>
+                <p>
+                    The next frontier. Named for the god of the forge, fire,
+                    and craftsmen. To be built when BSI has pushed far enough
+                    to need a forward operating base beyond our solar system.
+                    At that point BSI will be literally forging humanity's
+                    path to the stars.
+                </p>
+                <table class="lore-table lore-table-margin">
+                    <tr>
+                        <th>FIELD</th>
+                        <th>DATA</th>
+                    </tr>
+                    <tr>
+                        <td>DESIGNATION</td>
+                        <td>HEPHAESTUS STATION</td>
+                    </tr>
+                    <tr>
+                        <td>CLASSIFICATION</td>
+                        <td>FORWARD OPERATING BASE</td>
+                    </tr>
+                    <tr>
+                        <td>LOCATION</td>
+                        <td>BEYOND SOLAR SYSTEM — TBD</td>
+                    </tr>
+                    <tr>
+                        <td>OPERATOR</td>
+                        <td>BLACKFORGE SPACE INDUSTRIES</td>
+                    </tr>
+                    <tr>
+                        <td>STATUS</td>
+                        <td><span class="status-planned">● PLANNED</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- CREW SECTION -->
+        <div class="lore-section" id="section-crew">
+            <div class="lore-card">
+                <h3>FOUNDING CREW — BSI BLACKSTAR</h3>
+                <p>
+                    Three crew members. Three Kings. Founder, Commander,
+                    and Medic. Family at the core of a frontier space company
+                    pushing humanity toward the stars.
+                </p>
+            </div>
+
+            <div class="crew-card">
+                <div class="crew-designation">
+                    <h4>N. KING</h4>
+                    <p>Founder</p>
+                    <p>Chief Intelligence Officer</p>
+                    <div class="crew-id">
+                        <p>BSI-0001 // COMMAND</p>
+                        <p>BSI BLACKSTAR</p>
+                    </div>
+                    <span class="clearance-badge clearance-red">
+                        CLEARANCE: RED
+                    </span>
+                    <br>
+                    <span class="clearance-badge clearance-red">
+                        ACCESS: CLASSIFIED
+                    </span>
+                </div>
+                <div class="crew-info">
+                    <p>
+                        Founder of Blackforge Space Industries.
+                        IT Specialist and cybersecurity expert.
+                        The intelligence and systems backbone of BSI.
+                        Holds the highest clearance in the organization.
+                        The reason the Blackstar exists.
+                    </p>
+                </div>
+            </div>
+
+            <div class="crew-card">
+                <div class="crew-designation">
+                    <h4>N. KING</h4>
+                    <p>CPT // Commander</p>
+                    <p>S2/S3 Operations</p>
+                    <div class="crew-id">
+                        <p>CMD-0001 // S2/S3 OPS</p>
+                        <p>BSI BLACKSTAR</p>
+                    </div>
+                    <span class="clearance-badge clearance-orange">
+                        CLEARANCE: ORANGE
+                    </span>
+                    <br>
+                    <span class="clearance-badge clearance-orange">
+                        ACCESS: AUTHORIZED
+                    </span>
+                </div>
+                <div class="crew-info">
+                    <p>
+                        Captain and Commander. Real world company commander
+                        translated directly into the BSI universe.
+                        Intelligence and Operations dual role — S2/S3.
+                        Commands the operational backbone of the Blackstar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="crew-card">
+                <div class="crew-designation">
+                    <h4>J. KING</h4>
+                    <p>PO2 // Lead Petty Officer</p>
+                    <p>Medical Operations</p>
+                    <div class="crew-id">
+                        <p>MED-0001 // MEDICAL OPS</p>
+                        <p>BSI BLACKSTAR</p>
+                    </div>
+                    <span class="clearance-badge clearance-blue">
+                        CLEARANCE: BLUE
+                    </span>
+                    <br>
+                    <span class="clearance-badge clearance-blue">
+                        ACCESS: OPERATIONAL
+                    </span>
+                </div>
+                <div class="crew-info">
+                    <p>
+                        Navy Petty Officer Second Class. Lead Petty Officer
+                        Medical. Works with special operations forces.
+                        Chief Medical Officer aboard the Blackstar.
+                        Critical operational support role on the frontier.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CLEARANCE SECTION -->
+        <div class="lore-section" id="section-clearance">
+            <div class="lore-card">
+                <h3>BSI CLEARANCE SYSTEM</h3>
+                <p>
+                    Blackforge Space Industries operates frontier
+                    installations far from conventional authority.
+                    The clearance system exists because in isolated
+                    frontier environments, information and access control
+                    is critical to mission survival.
+                </p>
+                <table class="lore-table lore-table-margin">
+                    <tr>
+                        <th>LEVEL</th>
+                        <th>COLOR</th>
+                        <th>DESIGNATION</th>
+                        <th>DESCRIPTION</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="color-white">WHITE</td>
+                        <td>CIVILIAN / VISITOR</td>
+                        <td>Non crew personnel</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="color-green">GREEN</td>
+                        <td>GENERAL CREW</td>
+                        <td>Standard crew members</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="color-blue">BLUE</td>
+                        <td>SPECIALIST</td>
+                        <td>Technical and medical staff</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="color-yellow">YELLOW</td>
+                        <td>SENIOR STAFF</td>
+                        <td>Department heads</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="color-orange">ORANGE</td>
+                        <td>COMMAND</td>
+                        <td>Command level officers</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="color-red">RED</td>
+                        <td>BLACK OPERATIONS</td>
+                        <td>Restricted — founder level</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="lore-card">
+                <h3>BSI ACCESS SYSTEM</h3>
+                <table class="lore-table">
+                    <tr>
+                        <th>ACCESS LEVEL</th>
+                        <th>AREAS</th>
+                    </tr>
+                    <tr>
+                        <td>GENERAL</td>
+                        <td>Common areas, crew quarters</td>
+                    </tr>
+                    <tr>
+                        <td>OPERATIONAL</td>
+                        <td>Work areas, labs, engineering</td>
+                    </tr>
+                    <tr>
+                        <td>RESTRICTED</td>
+                        <td>Sensitive systems, armory, data cores</td>
+                    </tr>
+                    <tr>
+                        <td>AUTHORIZED</td>
+                        <td>Command deck, mission critical systems</td>
+                    </tr>
+                    <tr>
+                        <td>CLASSIFIED</td>
+                        <td>Eyes only — no physical access markers</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function showLoreSection(section, btn) {
+            document.querySelectorAll('.lore-section')
+                .forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.lore-nav-btn')
+                .forEach(b => b.classList.remove('active'));
+            document.getElementById(`section-${section}`)
+                .classList.add('active');
+            btn.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

@@ -225,16 +225,25 @@ async function handleLogin() {
             return;
         }
 
-        // Full authentication successful
-        currentSession = {
-            isLoggedIn: true,
-            isAdmin: true,
-            isGuest: false,
-            username: bsiConfig.username
-        };
+// Full authentication successful
+currentSession = {
+    isLoggedIn: true,
+    isAdmin: true,
+    isGuest: false,
+    username: bsiConfig.username
+};
 
-        loginStep = 'credentials';
-        showDashboard();
+// Save session to localStorage
+localStorage.setItem('bsi_session', JSON.stringify({
+    isLoggedIn: true,
+    isAdmin: true,
+    isGuest: false,
+    username: bsiConfig.username,
+    timestamp: Date.now()
+}));
+
+loginStep = 'credentials';
+showDashboard();
     }
 }
 
@@ -259,7 +268,15 @@ function handleGuestAccess() {
         isGuest: true,
         username: 'GUEST'
     };
+    localStorage.setItem('bsi_session', JSON.stringify({
+        isLoggedIn: true,
+        isAdmin: false,
+        isGuest: true,
+        username: 'GUEST',
+        timestamp: Date.now()
+    }));
     showDashboard();
+
 }
 
 // ============================================
@@ -272,6 +289,8 @@ function handleLogout() {
         isGuest: false,
         username: null
     };
+    // Clear session
+    localStorage.removeItem('bsi_session');
     bsiConfig = null;
     resetLoginForm();
     document.getElementById('username').value = '';
@@ -320,12 +339,29 @@ function showDashboard() {
 // EVENT LISTENERS
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
+    // Check for existing session
+    const savedSession = localStorage.getItem('bsi_session');
+    if (savedSession) {
+        const session = JSON.parse(savedSession);
+        // Session expires after 24 hours
+        const age = Date.now() - session.timestamp;
+        const maxAge = 24 * 60 * 60 * 1000;
+        if (age < maxAge) {
+            currentSession = session;
+            showDashboard();
+            return;
+        } else {
+            localStorage.removeItem('bsi_session');
+        }
+    }
+
     // Check for token on load
     const token = localStorage.getItem('bsi_github_token');
     if (!token) {
         promptForToken();
     }
 
+    // Event Listeners
     document.getElementById('login-btn')
         .addEventListener('click', handleLogin);
 

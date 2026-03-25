@@ -44,12 +44,26 @@
         <!-- HEADER -->
         <header>
             <div class="header-left">
-                <img src="smaller logo.png" alt="BSI" id="header-logo"/>
-                <div class="header-text">
-                    <span class="header-title">BSI // DEVELOPMENT ROADMAP</span>
-                    <span class="header-sub">BSI BLACKSTAR — DARKFORGE STATION</span>
-                </div>
-            </div>
+    <span class="header-title">BSI // DEVELOPMENT ROADMAP</span>
+    <span class="header-sub">BSI BLACKSTAR — DARKFORGE STATION</span>
+    <nav style="display:flex;gap:16px;margin-top:6px">
+        <a href="index.html" >
+                      ROADMAP
+        </a>
+        <a href="lore.html"
+            style="
+                color:var(--text-dim);
+                text-decoration:none;
+                font-size:0.7rem;
+                letter-spacing:0.15em;
+            "
+            onmouseover="this.style.color='var(--orange)'"
+            onmouseout="this.style.color='var(--text-dim)'"
+        >
+            LORE DATABASE
+        </a>
+    </nav>
+</div>
             <div class="header-right">
                 <span id="user-badge"></span>
                 <button id="logout-btn" class="btn-small">LOGOUT</button>
