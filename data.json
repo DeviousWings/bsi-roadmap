@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T16:23:26.206Z",
+  "lastUpdated": "2026-03-25T16:52:27.525Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -14,7 +14,13 @@
               "name": "Design backing plate in Fusion 360",
               "completed": false,
               "notes": "",
-              "subtasks": []
+              "subtasks": [
+                {
+                  "id": "subtask1774457547523",
+                  "name": "TEST1",
+                  "completed": false
+                }
+              ]
             },
             {
               "id": "task2",
