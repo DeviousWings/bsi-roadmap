@@ -76,6 +76,27 @@ body {
     padding: 20px;
 }
 
+/* ============================================
+   LOGO SETTINGS — easy edit zone
+   ============================================ */
+
+/* --- Login Screen Logo --- */
+#login-logo {
+    display: block;
+    margin: 0 auto 16px auto;   /* centre horizontally, gap below */
+    max-width: 320px;            /* maximum width */
+    width: 100%;                 /* shrinks on small screens */
+}
+
+/* --- Header (Main Page) Logo --- */
+#header-logo {
+    height: 42px;                /* controls logo size in the header */
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+/* ============================================ */
+
 .bsi-logo {
     text-align: center;
     margin-bottom: 40px;
@@ -266,6 +287,13 @@ header {
 }
 
 .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-text {
     display: flex;
     flex-direction: column;
     gap: 4px;
