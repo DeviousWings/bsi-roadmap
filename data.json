@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T16:53:25.929Z",
+  "lastUpdated": "2026-03-25T20:49:21.222Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -53,21 +53,21 @@
             },
             {
               "id": "task7",
-              "name": "Paint test — black base",
+              "name": "PAINT TEST - BLACK BASE",
               "completed": false,
               "notes": "",
               "subtasks": []
             },
             {
               "id": "task8",
-              "name": "Paint test — silver dry brush",
+              "name": "PAINT TEST - SILVER DRY BRUSH",
               "completed": false,
               "notes": "",
               "subtasks": []
             },
             {
               "id": "task9",
-              "name": "Paint test — orange strip",
+              "name": "PAINT TEST - ORANGE STRIP",
               "completed": false,
               "notes": "",
               "subtasks": []
@@ -88,7 +88,7 @@
             },
             {
               "id": "task12",
-              "name": "Send test units to N. King and J. King",
+              "name": "SEND TEST UNITS TO NIC KING AND JOSH KING",
               "completed": false,
               "notes": "",
               "subtasks": []
@@ -96,6 +96,89 @@
             {
               "id": "task13",
               "name": "Collect feedback",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            }
+          ]
+        },
+        {
+          "id": "phase1774471667258",
+          "name": "PHASE 2",
+          "tasks": [
+            {
+              "id": "task1774471674458",
+              "name": "FUSION DESIGN FINALIZED",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471680151",
+              "name": "ROUNDED CORNERS CONFIRMED",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471686158",
+              "name": "BOLT HOLE PLACEMENT CONFIRMED",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471690890",
+              "name": "PRODUCTION QUALITY PRINT ACHIEVED",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471697273",
+              "name": "THREE PIECE ASSEMBLY CLEAN AND SOLID",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471703528",
+              "name": "FULL PAINT AND WEATHERING COMPLETE",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471707819",
+              "name": "PART CODE AND SERIAL ON REVERSE",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471711930",
+              "name": "PACKAGING DESIGNED",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471746640",
+              "name": "PRICING CONFIRMED",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471753396",
+              "name": "ORDER FORM OR STORE LISTING CREATED",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471761219",
+              "name": "READY TO SELL",
               "completed": false,
               "notes": "",
               "subtasks": []
