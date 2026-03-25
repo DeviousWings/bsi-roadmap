@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:46:08.619Z",
+  "lastUpdated": "2026-03-25T20:46:16.134Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -67,7 +67,7 @@
             },
             {
               "id": "task9",
-              "name": "Paint test — orange strip",
+              "name": "PAINT TEST - ORANGE STRIP",
               "completed": false,
               "notes": "",
               "subtasks": []
