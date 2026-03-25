@@ -1,0 +1,650 @@
+/* ============================================
+   BSI ROADMAP — STYLESHEET
+   Blackforge Space Industries
+   Color Scheme: Black, Silver, Orange
+============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #0a0a0a;
+    --dark: #111111;
+    --darker: #1a1a1a;
+    --panel: #222222;
+    --border: #333333;
+    --silver: #c0c0c0;
+    --silver-dark: #888888;
+    --orange: #ff6600;
+    --orange-dark: #cc4400;
+    --orange-glow: rgba(255, 102, 0, 0.15);
+    --text: #e0e0e0;
+    --text-dim: #888888;
+    --success: #44aa44;
+    --error: #cc3333;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--text);
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+}
+
+/* ============================================
+   SCREENS
+============================================ */
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* ============================================
+   LOGIN SCREEN
+============================================ */
+
+#login-screen {
+    min-height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: 
+        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(255,102,0,0.03) 2px,
+            rgba(255,102,0,0.03) 4px
+        );
+}
+
+#login-screen.active {
+    display: flex;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.bsi-logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bsi-logo h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    color: var(--silver);
+    text-shadow: 0 0 20px rgba(192,192,192,0.3);
+}
+
+.bsi-logo h2 {
+    font-size: 1rem;
+    letter-spacing: 0.4em;
+    color: var(--orange);
+    margin-top: 4px;
+}
+
+.bsi-logo .tagline {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--text-dim);
+    margin-top: 12px;
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+}
+
+.login-box {
+    background: var(--darker);
+    border: 1px solid var(--border);
+    border-top: 2px solid var(--orange);
+    padding: 30px;
+}
+
+.login-box h3 {
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    color: var(--orange);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--text-dim);
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 10px 14px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: var(--orange);
+}
+
+.error-msg {
+    color: var(--error);
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 12px;
+    letter-spacing: 0.1em;
+    min-height: 20px;
+}
+
+/* ============================================
+   BUTTONS
+============================================ */
+
+.btn-primary {
+    width: 100%;
+    background: var(--orange);
+    color: var(--black);
+    border: none;
+    padding: 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: var(--orange-dark);
+}
+
+.btn-secondary {
+    width: 100%;
+    background: transparent;
+    color: var(--silver-dark);
+    border: 1px solid var(--border);
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    border-color: var(--silver-dark);
+    color: var(--silver);
+}
+
+.btn-small {
+    background: transparent;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-small:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+.btn-danger {
+    background: transparent;
+    color: var(--error);
+    border: 1px solid var(--error);
+    padding: 4px 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-danger:hover {
+    background: var(--error);
+    color: var(--black);
+}
+
+.btn-add {
+    background: transparent;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    padding: 4px 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-add:hover {
+    background: var(--orange-glow);
+}
+
+/* ============================================
+   HEADER
+============================================ */
+
+header {
+    background: var(--darker);
+    border-bottom: 2px solid var(--orange);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.header-title {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    color: var(--silver);
+}
+
+.header-sub {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--orange);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#user-badge {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+}
+
+/* ============================================
+   MAIN
+============================================ */
+
+main {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   PRODUCT CARDS
+============================================ */
+
+.product-card {
+    background: var(--darker);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--orange);
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.product-header {
+    background: var(--panel);
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+}
+
+.product-header:hover {
+    background: #2a2a2a;
+}
+
+.product-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.product-id {
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    color: var(--orange);
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--silver);
+}
+
+.product-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.progress-bar-container {
+    width: 150px;
+}
+
+.progress-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    height: 4px;
+    background: var(--border);
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--orange);
+    transition: width 0.3s ease;
+}
+
+.product-body {
+    display: none;
+    padding: 20px;
+}
+
+.product-body.open {
+    display: block;
+}
+
+/* ============================================
+   PHASE SECTIONS
+============================================ */
+
+.phase-section {
+    margin-bottom: 20px;
+}
+
+.phase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: var(--panel);
+    border-left: 2px solid var(--silver-dark);
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.phase-header:hover {
+    background: #2a2a2a;
+}
+
+.phase-name {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--silver);
+}
+
+.phase-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.phase-body {
+    padding-left: 12px;
+}
+
+/* ============================================
+   TASKS
+============================================ */
+
+.task-item {
+    margin-bottom: 8px;
+    border: 1px solid var(--border);
+    background: var(--dark);
+}
+
+.task-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 10px;
+}
+
+.task-checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--orange);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.task-name {
+    flex: 1;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    color: var(--text);
+}
+
+.task-name.completed {
+    text-decoration: line-through;
+    color: var(--text-dim);
+}
+
+.task-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.task-body {
+    padding: 0 12px 10px 38px;
+    display: none;
+}
+
+.task-body.open {
+    display: block;
+}
+
+.task-notes {
+    width: 100%;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    resize: vertical;
+    min-height: 60px;
+    margin-bottom: 8px;
+    outline: none;
+}
+
+.task-notes:focus {
+    border-color: var(--orange);
+}
+
+.task-notes::placeholder {
+    color: var(--text-dim);
+}
+
+/* ============================================
+   SUBTASKS
+============================================ */
+
+.subtask-list {
+    margin-bottom: 8px;
+}
+
+.subtask-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    border-left: 2px solid var(--border);
+    margin-bottom: 4px;
+    background: var(--darker);
+}
+
+.subtask-checkbox {
+    width: 14px;
+    height: 14px;
+    accent-color: var(--orange);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.subtask-name {
+    flex: 1;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
+
+.subtask-name.completed {
+    text-decoration: line-through;
+    color: var(--border);
+}
+
+/* ============================================
+   MODALS
+============================================ */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal {
+    background: var(--darker);
+    border: 1px solid var(--border);
+    border-top: 2px solid var(--orange);
+    padding: 30px;
+    width: 100%;
+    max-width: 480px;
+}
+
+.modal h3 {
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+    color: var(--orange);
+    margin-bottom: 20px;
+}
+
+.modal input,
+.modal textarea {
+    width: 100%;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+.modal input:focus,
+.modal textarea:focus {
+    border-color: var(--orange);
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.modal-actions .btn-primary {
+    flex: 1;
+}
+
+.modal-actions .btn-secondary {
+    flex: 1;
+}
+
+/* ============================================
+   SCROLLBAR
+============================================ */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--orange);
+}
+
+/* ============================================
+   UTILITY
+============================================ */
+
+.divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 16px 0;
+}
+
+.last-updated {
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: var(--text-dim);
+    text-align: right;
+    padding: 8px 24px;
+}

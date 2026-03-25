@@ -1,0 +1,108 @@
+{
+  "lastUpdated": "",
+  "products": [
+    {
+      "id": "BF-ID-01",
+      "name": "Serialized Nameplate",
+      "phases": [
+        {
+          "id": "phase1",
+          "name": "Phase 1 — Prototype",
+          "tasks": [
+            {
+              "id": "task1",
+              "name": "Design backing plate in Fusion 360",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task2",
+              "name": "Design name plate face in Fusion 360",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task3",
+              "name": "Design ID strip in Fusion 360",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task4",
+              "name": "Test print all three pieces",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task5",
+              "name": "Test bolt assembly fit",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task6",
+              "name": "Test wall mounting hardware",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task7",
+              "name": "Paint test — black base",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task8",
+              "name": "Paint test — silver dry brush",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task9",
+              "name": "Paint test — orange strip",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task10",
+              "name": "Validate sizing and readability",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task11",
+              "name": "Part code placement on reverse confirmed",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task12",
+              "name": "Send test units to N. King and J. King",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task13",
+              "name": "Collect feedback",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
