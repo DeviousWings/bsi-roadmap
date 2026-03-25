@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:58:53.280Z",
+  "lastUpdated": "2026-03-25T20:58:58.588Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -227,6 +227,13 @@
             {
               "id": "task1774472333275",
               "name": "CUSTOM FONT OPTIONS",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472338575",
+              "name": "WEATHERING TIER OPTIONS",
               "completed": false,
               "notes": "",
               "subtasks": []
