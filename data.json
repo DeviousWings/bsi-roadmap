@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:47:47.265Z",
+  "lastUpdated": "2026-03-25T20:47:54.460Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -105,7 +105,15 @@
         {
           "id": "phase1774471667258",
           "name": "PHASE 2",
-          "tasks": []
+          "tasks": [
+            {
+              "id": "task1774471674458",
+              "name": "FUSION DESIGN FINALIZED",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            }
+          ]
         }
       ]
     },
