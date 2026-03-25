@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:48:31.935Z",
+  "lastUpdated": "2026-03-25T20:49:06.645Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -158,6 +158,13 @@
             {
               "id": "task1774471711930",
               "name": "PACKAGING DESIGNED",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471746640",
+              "name": "PRICING CONFIRMED",
               "completed": false,
               "notes": "",
               "subtasks": []
