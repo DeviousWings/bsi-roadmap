@@ -90,8 +90,8 @@ body {
 
 /* --- Header (Main Page) Logo --- */
 #header-logo {
-    height: 42px;                /* controls logo size in the header */
-    margin-right: 12px;
+    height: 100px;                /* controls logo size in the header */
+    margin-right: auto;
     vertical-align: middle;
 }
 
