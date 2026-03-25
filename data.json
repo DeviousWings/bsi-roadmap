@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T16:23:26.206Z",
+  "lastUpdated": "2026-03-25T16:53:25.929Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -7,7 +7,7 @@
       "phases": [
         {
           "id": "phase1",
-          "name": "Phase 1 — Prototype",
+          "name": "PHASE 1 PROTOTYPE",
           "tasks": [
             {
               "id": "task1",
