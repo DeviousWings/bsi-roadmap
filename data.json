@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:46:16.134Z",
+  "lastUpdated": "2026-03-25T20:46:32.270Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -88,7 +88,7 @@
             },
             {
               "id": "task12",
-              "name": "Send test units to N. King and J. King",
+              "name": "SEND TEST UNITS TO NIC KING AND JOSH KING",
               "completed": false,
               "notes": "",
               "subtasks": []
