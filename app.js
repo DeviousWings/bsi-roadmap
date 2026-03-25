@@ -166,7 +166,22 @@ function showSaveIndicator(message, isError = false) {
 // ============================================
 // RENDER ROADMAP
 // ============================================
+function getOpenState() {
+    const open = new Set();
+    document.querySelectorAll('.product-body.open, .phase-body.open, .task-body.open')
+        .forEach(el => open.add(el.id));
+    return open;
+}
+
+function restoreOpenState(openIds) {
+    openIds.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('open');
+    });
+}
+
 function renderRoadmap() {
+    const openIds = getOpenState();
     const container = document.getElementById('product-list');
     container.innerHTML = '';
 
@@ -189,6 +204,7 @@ function renderRoadmap() {
         container.appendChild(renderProduct(product));
     });
 
+    restoreOpenState(openIds);
     updateLastUpdated();
 }
 
@@ -631,6 +647,7 @@ function showAddPhaseModal(productId) {
                 tasks: []
             });
             renderRoadmap();
+            document.getElementById(`body-${productId}`)?.classList.add('open');
             saveData();
         }
     );
@@ -654,6 +671,8 @@ function showAddTaskModal(productId, phaseId) {
                 subtasks: []
             });
             renderRoadmap();
+            document.getElementById(`body-${productId}`)?.classList.add('open');
+            document.getElementById(`phasebody-${productId}-${phaseId}`)?.classList.add('open');
             saveData();
         }
     );
@@ -676,6 +695,9 @@ function showAddSubtaskModal(productId, phaseId, taskId) {
                 completed: false
             });
             renderRoadmap();
+            document.getElementById(`body-${productId}`)?.classList.add('open');
+            document.getElementById(`phasebody-${productId}-${phaseId}`)?.classList.add('open');
+            document.getElementById(`taskbody-${productId}-${phaseId}-${taskId}`)?.classList.add('open');
             saveData();
         }
     );
