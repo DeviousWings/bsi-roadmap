@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T16:23:13.911Z",
+  "lastUpdated": "2026-03-25T16:23:26.206Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -107,7 +107,13 @@
     {
       "id": "BF-DATA-01",
       "name": "COMMAND DATA CORE",
-      "phases": []
+      "phases": [
+        {
+          "id": "phase1774455806204",
+          "name": "PHASE 01",
+          "tasks": []
+        }
+      ]
     }
   ]
 }
