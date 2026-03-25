@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:49:13.400Z",
+  "lastUpdated": "2026-03-25T20:49:21.222Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -172,6 +172,13 @@
             {
               "id": "task1774471753396",
               "name": "ORDER FORM OR STORE LISTING CREATED",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471761219",
+              "name": "READY TO SELL",
               "completed": false,
               "notes": "",
               "subtasks": []
