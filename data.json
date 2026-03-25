@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:46:00.767Z",
+  "lastUpdated": "2026-03-25T20:46:08.619Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -60,7 +60,7 @@
             },
             {
               "id": "task8",
-              "name": "Paint test — silver dry brush",
+              "name": "PAINT TEST - SILVER DRY BRUSH",
               "completed": false,
               "notes": "",
               "subtasks": []
