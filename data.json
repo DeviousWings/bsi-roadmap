@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:48:27.822Z",
+  "lastUpdated": "2026-03-25T20:48:31.935Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -151,6 +151,13 @@
             {
               "id": "task1774471707819",
               "name": "PART CODE AND SERIAL ON REVERSE",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471711930",
+              "name": "PACKAGING DESIGNED",
               "completed": false,
               "notes": "",
               "subtasks": []
