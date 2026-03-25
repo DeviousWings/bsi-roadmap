@@ -272,8 +272,11 @@ function renderPhases(product) {
     return product.phases.map(phase => `
         <div class="phase-section" id="phase-${product.id}-${phase.id}">
             <div class="phase-header" 
-                onclick="togglePhase('${product.id}','${phase.id}')">
-                <span class="phase-name">${phase.name}</span>
+            onclick="togglePhase('${product.id}','${phase.id}')">
+            <span class="phase-name">
+            <span class="collapse-arrow" id="arrow-${product.id}-${phase.id}">▶</span>
+        ${phase.name}
+    </span>
                 <div class="phase-controls">
                     ${currentSession.isAdmin ? `
                     <button class="btn-add"

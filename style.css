@@ -457,7 +457,12 @@ main {
 }
 
 .phase-body {
+    display: none;
     padding-left: 12px;
+}
+
+.phase-body.open {
+    display: block;
 }
 
 /* ============================================
