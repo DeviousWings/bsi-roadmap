@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T21:01:34.143Z",
+  "lastUpdated": "2026-03-25T21:01:48.997Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -270,7 +270,13 @@
     {
       "id": "BF-PWR-01",
       "name": "EXECUTIVE POWER RELAY",
-      "phases": []
+      "phases": [
+        {
+          "id": "phase1774472508991",
+          "name": "PHASE 1 PROTOTYPE",
+          "tasks": []
+        }
+      ]
     },
     {
       "id": "BF-CLK-01",
