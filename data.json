@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:48:23.531Z",
+  "lastUpdated": "2026-03-25T20:48:27.822Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -144,6 +144,13 @@
             {
               "id": "task1774471703528",
               "name": "FULL PAINT AND WEATHERING COMPLETE",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471707819",
+              "name": "PART CODE AND SERIAL ON REVERSE",
               "completed": false,
               "notes": "",
               "subtasks": []
