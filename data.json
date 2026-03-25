@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T16:52:27.525Z",
+  "lastUpdated": "2026-03-25T16:52:42.795Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -18,6 +18,11 @@
                 {
                   "id": "subtask1774457547523",
                   "name": "TEST1",
+                  "completed": false
+                },
+                {
+                  "id": "subtask1774457562794",
+                  "name": "TEST2",
                   "completed": false
                 }
               ]
