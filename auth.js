@@ -275,6 +275,7 @@ async function handleLogin() {
         const savedHash = localStorage.getItem('bsi_password_hash');
 
         if (username !== savedUsername || hash !== savedHash) {
+            errorEl.style.color = '#cc3333';
             errorEl.textContent = 'INVALID CREDENTIALS';
             return;
         }
@@ -354,7 +355,9 @@ function handleLogout() {
     document.getElementById('username').value = '';
     document.getElementById('password').value = '';
     document.getElementById('mfa-code').value = '';
-    document.getElementById('login-error').textContent = '';
+    const loginErrorEl = document.getElementById('login-error');
+    loginErrorEl.textContent = '';
+    loginErrorEl.style.color = '#cc3333';
     showScreen('login-screen');
 }
 

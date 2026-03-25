@@ -219,9 +219,13 @@ function renderProduct(product) {
                     </div>
                 </div>
                 ${currentSession.isAdmin ? `
-                <button class="btn-add admin-only" 
+                <button class="btn-add admin-only"
                     onclick="event.stopPropagation();showAddPhaseModal('${product.id}')">
                     + PHASE
+                </button>
+                <button class="btn-small admin-only"
+                    onclick="event.stopPropagation();showEditProductModal('${product.id}')">
+                    EDIT
                 </button>
                 <button class="btn-danger admin-only"
                     onclick="event.stopPropagation();deleteProduct('${product.id}')">
@@ -256,10 +260,15 @@ function renderPhases(product) {
                 <span class="phase-name">${phase.name}</span>
                 <div class="phase-controls">
                     ${currentSession.isAdmin ? `
-                    <button class="btn-add" 
+                    <button class="btn-add"
                         onclick="event.stopPropagation();
                         showAddTaskModal('${product.id}','${phase.id}')">
                         + TASK
+                    </button>
+                    <button class="btn-small"
+                        onclick="event.stopPropagation();
+                        showEditPhaseModal('${product.id}','${phase.id}')">
+                        EDIT
                     </button>
                     <button class="btn-danger"
                         onclick="event.stopPropagation();
@@ -305,6 +314,10 @@ function renderTasks(productId, phase) {
                         ${task.notes ? 'NOTES ▼' : 'EXPAND ▼'}
                     </button>
                     ${currentSession.isAdmin ? `
+                    <button class="btn-small"
+                        onclick="showEditTaskModal('${productId}','${phase.id}','${task.id}')">
+                        EDIT
+                    </button>
                     <button class="btn-danger"
                         onclick="deleteTask('${productId}','${phase.id}','${task.id}')">
                         DEL
@@ -361,6 +374,12 @@ function renderSubtasks(productId, phaseId, task) {
                 ${subtask.name}
             </span>
             ${currentSession.isAdmin ? `
+            <button class="btn-small"
+                onclick="showEditSubtaskModal(
+                    '${productId}','${phaseId}',
+                    '${task.id}','${subtask.id}')">
+                EDIT
+            </button>
             <button class="btn-danger"
                 onclick="deleteSubtask(
                     '${productId}','${phaseId}',
@@ -516,14 +535,15 @@ function deleteSubtask(productId, phaseId, taskId, subtaskId) {
 // ============================================
 // MODAL SYSTEM
 // ============================================
-function createModal(title, fields, onConfirm) {
+function createModal(title, fields, onConfirm, defaultValues = {}) {
     const overlay = document.createElement('div');
     overlay.className = 'modal-overlay active';
 
     const fieldHTML = fields.map(f => `
-        <input type="text" 
-            id="modal-${f.id}" 
+        <input type="text"
+            id="modal-${f.id}"
             placeholder="${f.placeholder}"
+            value="${defaultValues[f.id] || ''}"
         />
     `).join('');
 
@@ -658,6 +678,79 @@ function showAddSubtaskModal(productId, phaseId, taskId) {
             renderRoadmap();
             saveData();
         }
+    );
+}
+
+// ============================================
+// EDIT FUNCTIONS
+// ============================================
+function showEditProductModal(productId) {
+    const product = roadmapData.products.find(p => p.id === productId);
+    createModal(
+        'EDIT PRODUCT',
+        [
+            { id: 'pid', placeholder: 'PRODUCT ID' },
+            { id: 'pname', placeholder: 'PRODUCT NAME' }
+        ],
+        (values) => {
+            const newId = values.pid.toUpperCase();
+            // Update any references if ID changed
+            if (newId !== product.id) {
+                product.id = newId;
+            }
+            product.name = values.pname.toUpperCase();
+            renderRoadmap();
+            saveData();
+        },
+        { pid: product.id, pname: product.name }
+    );
+}
+
+function showEditPhaseModal(productId, phaseId) {
+    const product = roadmapData.products.find(p => p.id === productId);
+    const phase = product.phases.find(p => p.id === phaseId);
+    createModal(
+        'EDIT PHASE',
+        [{ id: 'pname', placeholder: 'PHASE NAME' }],
+        (values) => {
+            phase.name = values.pname.toUpperCase();
+            renderRoadmap();
+            saveData();
+        },
+        { pname: phase.name }
+    );
+}
+
+function showEditTaskModal(productId, phaseId, taskId) {
+    const product = roadmapData.products.find(p => p.id === productId);
+    const phase = product.phases.find(p => p.id === phaseId);
+    const task = phase.tasks.find(t => t.id === taskId);
+    createModal(
+        'EDIT TASK',
+        [{ id: 'tname', placeholder: 'TASK NAME' }],
+        (values) => {
+            task.name = values.tname.toUpperCase();
+            renderRoadmap();
+            saveData();
+        },
+        { tname: task.name }
+    );
+}
+
+function showEditSubtaskModal(productId, phaseId, taskId, subtaskId) {
+    const product = roadmapData.products.find(p => p.id === productId);
+    const phase = product.phases.find(p => p.id === phaseId);
+    const task = phase.tasks.find(t => t.id === taskId);
+    const subtask = task.subtasks.find(s => s.id === subtaskId);
+    createModal(
+        'EDIT SUBTASK',
+        [{ id: 'sname', placeholder: 'SUBTASK NAME' }],
+        (values) => {
+            subtask.name = values.sname.toUpperCase();
+            renderRoadmap();
+            saveData();
+        },
+        { sname: subtask.name }
     );
 }
 
