@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:58:13.794Z",
+  "lastUpdated": "2026-03-25T20:58:18.860Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -192,6 +192,13 @@
             {
               "id": "task1774472293787",
               "name": "MULTIPLE SIZE OPTIONS AVAILABLE",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472298855",
+              "name": "PREMIUM FINISH TIER AVAILABLE",
               "completed": false,
               "notes": "",
               "subtasks": []
