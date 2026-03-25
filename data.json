@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:58:24.280Z",
+  "lastUpdated": "2026-03-25T20:58:40.630Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -206,6 +206,13 @@
             {
               "id": "task1774472304273",
               "name": "BULK ORDER CAPABILITY",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472320622",
+              "name": "FULL BSI PRODUCT LINE CONSISTENCY",
               "completed": false,
               "notes": "",
               "subtasks": []
