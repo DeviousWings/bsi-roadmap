@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:48:00.154Z",
+  "lastUpdated": "2026-03-25T20:48:06.160Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -116,6 +116,13 @@
             {
               "id": "task1774471680151",
               "name": "ROUNDED CORNERS CONFIRMED",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774471686158",
+              "name": "BOLT HOLE PLACEMENT CONFIRMED",
               "completed": false,
               "notes": "",
               "subtasks": []
