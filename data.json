@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-25T20:49:21.222Z",
+  "lastUpdated": "2026-03-25T21:01:56.323Z",
   "products": [
     {
       "id": "BF-ID-01",
@@ -184,6 +184,75 @@
               "subtasks": []
             }
           ]
+        },
+        {
+          "id": "phase1774472281359",
+          "name": "PHASE 3",
+          "tasks": [
+            {
+              "id": "task1774472293787",
+              "name": "MULTIPLE SIZE OPTIONS AVAILABLE",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472298855",
+              "name": "PREMIUM FINISH TIER AVAILABLE",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472304273",
+              "name": "BULK ORDER CAPABILITY",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472320622",
+              "name": "FULL BSI PRODUCT LINE CONSISTENCY",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472325977",
+              "name": "EXPANDED PERSONALIZATION OPTIONS",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472333275",
+              "name": "CUSTOM FONT OPTIONS",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472338575",
+              "name": "WEATHERING TIER OPTIONS",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472348648",
+              "name": "GIFT PACKAGING AVAILABLE",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            },
+            {
+              "id": "task1774472353846",
+              "name": "BSI ONLINE STORE LISTING LIVE",
+              "completed": false,
+              "notes": "",
+              "subtasks": []
+            }
+          ]
         }
       ]
     },
@@ -192,8 +261,30 @@
       "name": "COMMAND DATA CORE",
       "phases": [
         {
-          "id": "phase1774455806204",
-          "name": "PHASE 01",
+          "id": "phase1774472486943",
+          "name": "PHASE 1 PROTOTYPE",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "BF-PWR-01",
+      "name": "EXECUTIVE POWER RELAY",
+      "phases": [
+        {
+          "id": "phase1774472508991",
+          "name": "PHASE 1 PROTOTYPE",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "BF-CLK-01",
+      "name": "BULKHEAD CHRONOMETER",
+      "phases": [
+        {
+          "id": "phase1774472516314",
+          "name": "PHASE 1 PROTOTYPE",
           "tasks": []
         }
       ]
