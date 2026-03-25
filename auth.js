@@ -275,7 +275,12 @@ async function handleLogin() {
         const savedHash = localStorage.getItem('bsi_password_hash');
 
         if (username !== savedUsername || hash !== savedHash) {
+            errorEl.style.color = '#cc3333';
             errorEl.textContent = 'INVALID CREDENTIALS';
+            loginStep = 'credentials';
+            document.getElementById('mfa-group').style.display = 'none';
+            document.getElementById('login-btn').textContent = 'AUTHENTICATE';
+            document.getElementById('password').value = '';
             return;
         }
 
