@@ -329,11 +329,9 @@ function showDashboard() {
     ? `ADMIN // ${currentSession.username.toUpperCase()}`
     : "GUEST // VIEW ONLY";
 
-  if (currentSession.isAdmin) {
-    document.querySelectorAll(".admin-only").forEach((el) => {
-      el.style.display = "inline-block";
-    });
-  }
+  document.querySelectorAll(".admin-only").forEach((el) => {
+    el.style.display = currentSession.isAdmin ? "inline-block" : "none";
+  });
 
   if (typeof initApp === "function") initApp();
 }
@@ -342,6 +340,23 @@ function showDashboard() {
 // EVENT LISTENERS
 // ============================================
 document.addEventListener("DOMContentLoaded", () => {
+  // Event Listeners — always register these regardless of session state
+  document.getElementById("login-btn").addEventListener("click", handleLogin);
+
+  document
+    .getElementById("guest-btn")
+    .addEventListener("click", handleGuestAccess);
+
+  document.getElementById("logout-btn").addEventListener("click", handleLogout);
+
+  document.getElementById("password").addEventListener("keypress", (e) => {
+    if (e.key === "Enter") handleLogin();
+  });
+
+  document.getElementById("mfa-code").addEventListener("keypress", (e) => {
+    if (e.key === "Enter") handleLogin();
+  });
+
   // Check for existing session
   const savedSession = localStorage.getItem("bsi_session");
   if (savedSession) {
@@ -363,21 +378,4 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!token) {
     promptForToken();
   }
-
-  // Event Listeners
-  document.getElementById("login-btn").addEventListener("click", handleLogin);
-
-  document
-    .getElementById("guest-btn")
-    .addEventListener("click", handleGuestAccess);
-
-  document.getElementById("logout-btn").addEventListener("click", handleLogout);
-
-  document.getElementById("password").addEventListener("keypress", (e) => {
-    if (e.key === "Enter") handleLogin();
-  });
-
-  document.getElementById("mfa-code").addEventListener("keypress", (e) => {
-    if (e.key === "Enter") handleLogin();
-  });
 });
