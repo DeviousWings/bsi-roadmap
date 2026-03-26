@@ -1,77 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BSI Development Roadmap</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- LOGIN SCREEN -->
     <div id="login-screen" class="screen active">
-        <div class="login-container">
-            <div class="bsi-logo">
-                <img src="logo.png" alt="BSI Logo" id="login-logo"/>
-                <h1>BLACKFORGE</h1>
-                <h2>SPACE INDUSTRIES</h2>
-                <p class="tagline">HABITAT SYSTEMS FOR THE FRONTIER</p>
-            </div>
-            <div class="login-box">
-                <h3>CREW AUTHENTICATION</h3>
-                <div class="input-group">
-                    <label>USERNAME</label>
-                    <input type="text" id="username" placeholder="Enter username"/>
-                </div>
-                <div class="input-group">
-                    <label>PASSWORD</label>
-                    <input type="password" id="password" placeholder="Enter password"/>
-                </div>
-                <div class="input-group" id="mfa-group" style="display:none">
-                    <label>AUTHENTICATOR CODE</label>
-                    <input type="text" id="mfa-code" placeholder="6 digit code" maxlength="6"/>
-                </div>
-                <button id="login-btn" class="btn-primary">AUTHENTICATE</button>
-                <button id="guest-btn" class="btn-secondary">GUEST ACCESS</button>
-                <p id="login-error" class="error-msg"></p>
-            </div>
+      <div class="login-container">
+        <div class="bsi-logo">
+          <img src="logo.png" alt="BSI Logo" id="login-logo" />
+          <h1>BLACKFORGE</h1>
+          <h2>SPACE INDUSTRIES</h2>
+          <p class="tagline">HABITAT SYSTEMS FOR THE FRONTIER</p>
         </div>
+        <div class="login-box">
+          <h3>CREW AUTHENTICATION</h3>
+          <div class="input-group">
+            <label>USERNAME</label>
+            <input type="text" id="username" placeholder="Enter username" />
+          </div>
+          <div class="input-group">
+            <label>PASSWORD</label>
+            <input type="password" id="password" placeholder="Enter password" />
+          </div>
+          <div class="input-group" id="mfa-group" style="display: none">
+            <label>AUTHENTICATOR CODE</label>
+            <input
+              type="text"
+              id="mfa-code"
+              placeholder="6 digit code"
+              maxlength="6"
+            />
+          </div>
+          <button id="login-btn" class="btn-primary">AUTHENTICATE</button>
+          <button id="guest-btn" class="btn-secondary">GUEST ACCESS</button>
+          <p id="login-error" class="error-msg"></p>
+        </div>
+      </div>
     </div>
 
     <!-- MAIN DASHBOARD -->
     <div id="dashboard-screen" class="screen">
-
-        <!-- HEADER -->
-        <header>
-            <div class="header-left">
-    <span class="header-title">BSI // DEVELOPMENT ROADMAP</span>
-    <span class="header-sub">BSI BLACKSTAR — DARKFORGE STATION</span>
-    <nav class="site-nav">
-        <div class="site-nav-left">
-            <a href="index.html">ROADMAP</a>
-            <a href="lore.html" class="active">LORE DATABASE</a>
-        </div>
-
-    </nav>
-</div>
-            <div class="header-right">
-                <span id="user-badge"></span>
-                <button id="logout-btn" class="btn-small">LOGOUT</button>
-                <button id="add-product-btn" class="btn-primary admin-only" style="display:none">
-                    + ADD PRODUCT
-                </button>
+      <!-- HEADER -->
+      <header>
+        <div class="header-left">
+          <span class="header-title">BSI // DEVELOPMENT ROADMAP</span>
+          <span class="header-sub">BSI BLACKSTAR — DARKFORGE STATION</span>
+          <nav class="site-nav">
+            <div class="site-nav-left">
+              <a href="index.html">ROADMAP</a>
+              <a href="lore.html" class="active">LORE DATABASE</a>
             </div>
-        </header>
+          </nav>
+        </div>
+        <div class="header-right">
+          <span id="user-badge"></span>
+          <button id="logout-btn" class="btn-small">LOGOUT</button>
+          <button
+            id="add-product-btn"
+            class="btn-primary admin-only"
+            style="display: none"
+          >
+            + ADD PRODUCT
+          </button>
+        </div>
+      </header>
 
-        <!-- PRODUCT LIST -->
-        <main>
-            <div id="product-list"></div>
-        </main>
-
+      <!-- PRODUCT LIST -->
+      <main>
+        <div id="product-list"></div>
+      </main>
     </div>
 
     <script src="auth.js"></script>
     <script src="app.js"></script>
-
-</body>
+  </body>
 </html>
